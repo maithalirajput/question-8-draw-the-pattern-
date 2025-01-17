@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int main(){
+    pattern(5,5);
+}
+void pattern(int a,int n){
+    for(int i=0; i<n;i++){ 
+        for(int j=0;j<2*n-1;j++){
+            if(j<i){
+                printf(" %d ",a);
+                a--;
+            }
+            else if(i>=i && j<=2*n-2-i){
+                printf(" %d ",a);
+            }
+            else{
+                a++;
+                printf(" %d ",a);      
+            }
+        }       
+        printf("\n");
+    }
+
+    for(int i=n-2; i>=0;i--){
+        for(int j=0;j<2*n-1;j++){
+            if(j<i){
+                printf(" %d ",a);
+                a--;
+            }
+            else if(i>=i && j<=2*n-2-i){
+                printf(" %d ",a);
+            }
+            else{
+                a++;
+                printf(" %d ",a);  
+                
+            }
+        }       
+        printf("\n");
+    }
+}
